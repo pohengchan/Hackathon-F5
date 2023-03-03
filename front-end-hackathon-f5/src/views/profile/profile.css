@@ -1,0 +1,29 @@
+.container_profile_view{
+    padding: 0vh 10%;
+    padding-top:15vh;
+    padding-bottom:5vh;
+    min-height:80vh;
+    background-color: #F2F0F0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_user_image{
+    width:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin:5vh 0 ;
+    color:white;
+    font-weight: 800;
+    font-size: 5vh;
+    aspect-ratio: 1/1;
+    background-color: rgb(70, 70, 70);
+    filter: drop-shadow(0px 274px 110px rgba(0, 0, 0, 0.01))
+       drop-shadow(0px 154px 93px rgba(0, 0, 0, 0.05))
+       drop-shadow(0px 69px 69px rgba(0, 0, 0, 0.09))
+       drop-shadow(0px 17px 38px rgba(0, 0, 0, 0.1))
+       drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+       user-select: none;
+}

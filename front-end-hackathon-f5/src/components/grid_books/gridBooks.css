@@ -1,0 +1,10 @@
+.container_grid_books {
+   width: 100%;
+   gap: 2rem;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 1rem;
+   margin: 5vh 0;
+}

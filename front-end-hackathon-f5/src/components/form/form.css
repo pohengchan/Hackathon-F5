@@ -1,0 +1,334 @@
+.container-form {
+    border-radius: 10px;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 0px 20px;
+    border: 3px solid #F9F9F9;
+    margin: 10px 20px;
+  }
+  h2 {
+    text-align: center;
+    padding: 15px 20px;
+  }
+  
+  .rectangle {
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .form-check-input:checked {
+    background-color: #888DA7 !important;
+    border-color: #888DA7 !important;
+  }
+  
+  .form-control {
+    margin-bottom: 7px;
+    position: relative;
+    background-color: #fff;
+    border: none !important;
+  }
+  .form-control label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font: weight 200px;
+  }
+  .form-control input {
+    border: none;
+    background-color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    border: 3px solid #888DA7;
+  }
+  .form-control,
+  input:focus {
+    outline: none;
+  }
+  .form-react button {
+    background: #888DA7;
+    border: 1px solid #888DA7;
+    border-radius: 8px;
+    color: #050505;
+    display: block;
+    width: 70%;
+    padding: 5px;
+    font-size: 18px;
+    margin: 20px 50px;
+  }
+  .form-react button:hover {
+    background-color: #363e65;
+  }
+  .fail {
+    color: #f2317f;
+  }
+  
+  /* reCATPCHA */
+  
+  .captcha {
+    flex-direction: column;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    color: #4c4a4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+    margin: 0.5em !important;
+    text-align: center;
+  }
+  .logo {
+    align-self: center !important;
+  }
+  
+  
+  .text {
+    font-size: .8em;
+    font-weight: 500;
+    margin-right: 1em;
+  }
+  
+  .spinner {
+    position: relative;
+    height: 2em;
+    display: flex;
+    margin: 2em 1em;
+    align-items: center;
+    justify-content: center;
+  }
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  input[type="radio"] + .checkmark {
+    width: 1em;
+    height: 1em;
+    background-color: #fcfcfc;
+    border: 2.5px solid #c3c3c3;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  input[type="radio"] + .checkmark span {
+    content: "";
+    position: relative;
+    margin-top: -3px;
+    transform: rotate(45deg);
+    width: 0.75em;
+    height: 1.2em;
+    opacity: 0;
+  }
+  input[type="radio"] + .checkmark > span:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #029f56;
+  }
+  input[type="radio"] + .checkmark > span:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 3px;
+    bottom: 0;
+    right: 0;
+    background-color: #029f56;
+  }
+  input[type="radio"]:checked + .checkmark {
+    animation: 2s spin forwards;
+  }
+  input[type="radio"]:checked + .checkmark > span {
+    animation: 1s fadein 1.9s forwards;
+  }
+  input[type="radio"]:checked + .checkmark > span:after {
+    animation: 0.3s bottomslide 2s forwards;
+  }
+  input[type="radio"]:checked + .checkmark > span:before {
+    animation: 0.5s rightslide 2.2s forwards;
+  }
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes bottomslide {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes rightslide {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+    margin: 0.5em 1em;
+  }
+  .logo img {
+    height: 2em;
+    width: 2em;
+  }
+  .logo p {
+    color: #9d9ba7;
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin: 0.4em 0 0.2em 0;
+  }
+  .logo small {
+    color: #9d9ba7;
+    margin: 0;
+    font-size: 0.6em;
+  }
+  
+  @keyframes spin {
+    10% {
+      width: 0;
+      height: 0;
+      border-width: 6px;
+    }
+    30% {
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      border-width: 1em;
+      transform: rotate(0deg);
+      border-color: rgb(199, 218, 245);
+    }
+    50% {
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      border-width: 4px;
+      border-color: rgb(199, 218, 245);
+      border-right-color: rgb(89, 152, 239);
+    }
+    70% {
+      border-width: 4px;
+      border-color: rgb(199, 218, 245);
+      border-right-color: rgb(89, 152, 239);
+    }
+    90% {
+      border-width: 4px;
+    }
+    100% {
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      transform: rotate(720deg);
+      border-color: transparent;
+    }
+  }
+  
+  ::selection {
+    background-color: transparent;
+    color: teal;
+  }
+  ::-moz-selection {
+    background-color: transparent;
+    color: teal;
+  }
+  .desg-name {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  @media screen and (min-width: 820px) and (max-width: 1180px) {
+    .container-form {
+      width: 46%;
+      margin-left: 77px;
+      border: 3px solid #F9F9F9;
+     
+   
+      
+
+    
+    }
+
+   
+  
+    .form-section {
+      background-image: url("../../assets/images/form.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+      margin: 0 -59px;
+    }
+  
+    h2 {
+      padding: 8px 10px;
+    }
+  
+    label {
+      font-size: 16px;
+    }
+  
+    .text {
+      font-size: 1.2em;
+      font-weight: 500;
+      margin-right: 1em;
+  }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .container-form {
+      width: 40%;
+      margin-left: 100px;
+      border: 3px solid #F9F9F9;
+      
+    }
+
+    .form-control input {
+        width:95%;
+    }
+    .form-section {
+      background-image: url("../../assets/images/form.png");
+      height: 90vh;
+      background-size: 100% cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+    }
+  
+    .form-react button {
+      width: 40%;
+      margin: 20px 150px;
+    }
+   
+    .text {
+      font-size: 1.2em;
+      font-weight: 500;
+      margin-right: 1em;
+  }
+  
+  .captcha {
+    width: 372px;
+    margin: 15px 50px;
+  }
+  }
+  

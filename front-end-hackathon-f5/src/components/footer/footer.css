@@ -1,0 +1,8 @@
+.text-center-md-right {
+    text-align: center;
+  }
+  
+  .list-inline-centered {
+    display: flex;
+    justify-content: center;
+  }
